@@ -19,7 +19,7 @@ fun main() {
 
         while (true) {
             println("გსურთ პროგრამის ხელახლა დაწყება - დიახ/არა?")
-            answer = readln()
+            answer = readln().trim()
 
             if (answer == "დიახ" || answer == "არა") break
             else print("გთხოვთ შეიყვანოთ \"დიახ\" ან \"არა\". ")
