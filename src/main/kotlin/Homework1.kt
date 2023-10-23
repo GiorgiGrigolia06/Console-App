@@ -14,9 +14,11 @@ fun main() {
         val y = getValidInput()
 
         val z = x + y
+        // Here, if the result is a whole number, the program will convert it to an Int, so the unnecessary ".0" will be removed.
         val result = if (z % 1.0 == 0.0) z.toInt() else z
         println("x და y ჯამი არის $result.")
 
+        // This loop will work until the user either inputs "დიახ" or "არა".
         while (true) {
             println("გსურთ პროგრამის ხელახლა დაწყება - დიახ/არა?")
             answer = readln().trim()
@@ -32,6 +34,10 @@ fun main() {
     }
 }
 
+/*
+ * The function below ensures that the program will proceed only when a user input is a valid number.
+ * If number is not provided, it will continue to prompt for one.
+ */
 private fun getValidInput(): Double {
     var output: Double
 
