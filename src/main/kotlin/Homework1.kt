@@ -15,8 +15,7 @@ fun main() {
 
         val z = x + y
         // Here, if the result is a whole number, the program will convert it to an Int, so the unnecessary ".0" will be removed.
-        val result = if (z % 1.0 == 0.0) z.toInt() else z
-        println("x და y ჯამი არის $result.")
+        println("x და y ჯამი არის ${ if (z % 1.0 == 0.0) z.toInt() else z }.")
 
         // This loop will work until the user either inputs "დიახ" or "არა".
         while (true) {
