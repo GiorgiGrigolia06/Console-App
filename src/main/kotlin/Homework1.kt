@@ -5,7 +5,7 @@ fun main() {
     var answer: String
 
     while (isProgramRunning) {
-        println("დაწყება")
+        println("დაწყება 🚀")
 
         print("შეიყვანეთ x ცვლადის მნიშვნელობა: ")
         val x = getValidInput()
@@ -27,7 +27,7 @@ fun main() {
         }
 
         if (answer == "არა") {
-            println("დასასრული")
+            println("დასასრული 🏁")
             isProgramRunning = false
         } else println()
     }
